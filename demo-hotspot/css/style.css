@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: 
+          url('Rowdies/HindSiliguri-Bold.ttf') format('truetype');
+  
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+a,
+body,
+div,
+form,
+html,
+img,
+input,
+label,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+body,
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    
+}
+
+
+body {
+    background: rgb(255, 0, 0);
+    background-size: 300% 100%;
+    overflow: hidden;
+}
+
+
+
+
+/* Bubble Animation */
+.bubbles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 50%;
+    animation: bubbleFloat 10s infinite linear;
+    filter: blur(5px);
+}
+
+@keyframes bubbleFloat {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+
+a {
+    color: #000000;
+ 
+}
+
+input,
+label {
+    vertical-align: middle;
+    white-space: normal;
+    background: 0 0;
+    line-height: 1
+}
+
+label {
+    position: relative;
+    display: block
+}
+
+p::first-letter {
+    text-transform: uppercase
+}
+
+.main {
+    min-height: calc(100vh - 90px);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.ie-fixMinHeight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.ico {
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 14px
+}
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 30px auto
+}
+
+.logo * {
+    fill: #fff
+}
+
+.lite .logo * {
+    fill: #444
+}
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    font-size: 24px !important
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px
+}
+
+.wrap {
+    margin: auto;
+    padding: 40px;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out
+}
+
+@media only screen and (min-width:1px) and (max-width:575px) {
+    .wrap {
+        width: 100%
+    }
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.info {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+
+
+
+
+
+input {
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input:focus {
+    outline: 0
+}
+
+input[type=password],
+input[type=text] {
+    width: 100%;
+    border: 1px solid red;
+    background-color: rgba(255, 255, 255, .8);
+    height: 44px;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+    transition: -webkit-box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out
+}
+
+input[type=password]:focus,
+input[type=text]:focus {
+    -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 1)
+}
+
+.bt {
+    opacity: .4
+}
+
+input[type=submit] {
+    background: linear-gradient(rgb(245, 108, 45), rgb(153, 115, 10));
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background: #33404a
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+table td {
+    color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 4px 10px 0
+}
+
+table td:first-child {
+    font-weight: 700
+}
+
+.lite {
+    background: #fff
+}
+
+.lite input[type=password],
+.lite input[type=text] {
+    border: 1px solid #c3c3c3
+}
+
+.lite .info,
+.lite h1,
+.lite table td {
+    color: #444
+}
+
+.lite input[type=password]:focus,
+.lite input[type=text]:focus {
+    -webkit-box-shadow: 0 0 5px 0 rgba(62, 77, 89, .2);
+    box-shadow: 0 0 5px 0 rgba(62, 77, 89, .2)
+}
+
+
+
+
+.dark {
+    background: #343434
+}
+
+.dark input[type=submit] {
+    background: #dc3a41
+}
+
+.dark input[type=submit]:focus,
+.dark input[type=submit]:hover {
+    background: #b92f35
+}
+
+.dark input[type=password],
+.dark input[type=text] {
+    background-color: #fff
+}
+
+.dark a {
+    color: #dc3a41
+}
+
+.dark table td {
+    border-bottom: 1px solid #505050
+}
+
+.info.alert {
+    color: #da3d41
+}
+
+@media (min-width:576px) {
+    .wrap {
+        width: 410px
+    }
+
+    * {
+        font-size: 14px !important
+    }
+}
+
+
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+}
+.button {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.whatsapp {
+    background-color: #25D366;
+}
+.call {
+    background-color: #34B7F1;
+}
+.button img {
+    width: 40px;
+    height: 40px;
+}

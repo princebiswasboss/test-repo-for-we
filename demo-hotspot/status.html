@@ -1,0 +1,101 @@
+<html>
+<head>
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+$(endif)
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<title>Internet hotspot - Status</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- Pixel Code - https://darkturquoise-dogfish-447589.hostingersite.com/ -->
+<script defer src="https://darkturquoise-dogfish-447589.hostingersite.com/pixel/0nihdr4INTKXrBc0"></script>
+<!-- END Pixel Code -->
+<script>
+
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+</script>
+    
+</head>
+<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+    <div class="ie-fixMinHeight">
+        <div class="main">
+            <div class="wrap">
+                   
+                <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="210.000000pt" height="108.000000pt" viewBox="0 0 450.000000 318.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,318.000000) scale(0.050000,-0.050000)" fill="#069004" stroke="none"> <path d="M4470 6048 c-324 -30 -622 -106 -892 -228 l-171 -77 -392 -2 c-510 -3 -631 -39 -860 -257 -250 -239 -295 -388 -295 -976 0 -565 75 -793 324 -994 l80 -64 -238 -10 c-327 -14 -519 -137 -585 -376 -35 -124 -27 -1315 9 -1436 38 -129 144 -251 274 -316 l104 -52 682 0 682 0 99 -63 c801 -508 2017 -498 2779 22 58 39 87 41 801 41 l741 0 104 52 c279 139 309 230 319 968 14 1020 -73 1160 -722 1160 l-256 0 116 117 c242 242 287 392 287 962 -1 542 -40 687 -246 913 -231 254 -391 308 -917 308 -366 0 -382 2 -479 51 -362 184 -944 295 -1348 257z m2375 -556 c343 -174 425 -362 425 -972 l0 -470 -63 -134 c-112 -235 -309 -387 -566 -436 -94 -18 -2221 -31 -2221 -14 0 4 44 52 98 108 54 56 132 170 175 257 l77 157 13 481 c12 490 19 538 94 686 183 359 325 407 1183 400 l670 -5 115 -58z m-2563 -303 c60 -55 52 -179 -15 -223 -122 -80 -307 -11 -307 114 0 139 209 210 322 109z m-1544 -334 c24 -168 47 -318 50 -335 7 -38 16 2 83 356 l55 286 161 -6 161 -6 55 -270 c30 -148 56 -296 56 -328 1 -32 6 -54 12 -48 8 8 109 607 109 648 0 4 79 8 177 8 l176 0 -133 -555 c-73 -305 -139 -580 -147 -610 -14 -54 -16 -55 -171 -55 l-158 0 -34 153 c-19 83 -50 243 -69 355 -24 136 -40 186 -47 152 -6 -27 -37 -185 -68 -350 l-57 -300 -161 -6 -160 -5 -134 565 c-74 311 -140 586 -147 611 -11 44 -8 45 167 45 l179 0 45 -305z m1562 -465 l0 -450 -160 0 -160 0 0 437 c0 503 -15 463 173 463 l147 0 0 -450z m3350 -1162 c44 -23 107 -80 140 -127 l60 -84 0 -665 0 -665 -55 -83 c-30 -46 -93 -104 -140 -129 l-85 -45 -2850 0 -2850 0 -93 55 c-173 101 -177 123 -177 874 0 776 14 822 275 901 142 43 5690 13 5775 -32z"/> <path d="M6535 5210 c-109 -62 -98 -214 20 -263 138 -58 265 13 265 149 0 113 -167 180 -285 114z"/> <path d="M5220 4550 l0 -610 170 0 170 0 0 190 0 190 330 0 330 0 0 140 0 140 -330 0 -330 0 0 140 0 140 360 0 360 0 0 140 0 140 -530 0 -530 0 0 -610z"/> <path d="M6494 4827 c-8 -7 -14 -210 -14 -450 l0 -437 160 0 161 0 -6 445 -5 445 -141 6 c-77 3 -147 -1 -155 -9z"/> <path d="M4655 3086 l-55 -9 0 -208 0 -209 60 0 c57 0 60 4 60 81 0 105 59 104 92 -1 19 -58 34 -71 87 -76 71 -7 72 13 9 144 -25 51 -24 63 2 92 98 108 -52 218 -255 186z m165 -124 c0 -35 -36 -62 -82 -62 -10 0 -18 23 -18 50 0 40 10 50 50 50 36 0 50 -11 50 -38z"/> <path d="M3160 2869 l0 -212 55 7 55 6 6 205 5 205 -60 0 -61 0 0 -211z"/> <path d="M3360 2870 c0 -210 0 -210 49 -210 47 0 50 6 55 142 l6 141 77 -142 c73 -135 81 -143 140 -137 l63 6 6 205 5 205 -60 0 -61 0 0 -124 0 -124 -64 124 c-62 119 -68 124 -140 124 l-76 0 0 -210z"/> <path d="M3804 3035 c4 -32 22 -47 60 -51 53 -6 54 -10 60 -160 6 -151 7 -154 61 -160 l55 -7 0 162 0 161 60 0 c51 0 60 8 60 50 0 50 -1 50 -181 50 -177 0 -182 -1 -175 -45z"/> <path d="M4220 2869 l0 -211 155 6 c143 6 155 9 161 51 6 42 -1 45 -95 45 -88 0 -101 5 -101 40 0 34 13 40 90 40 77 0 90 6 90 40 0 34 -13 40 -90 40 -67 0 -90 8 -90 30 0 22 23 30 90 30 83 0 90 4 90 50 0 49 -3 50 -150 50 l-150 0 0 -211z"/> <path d="M5000 2869 l0 -212 55 7 c54 6 55 9 55 141 0 163 -8 164 84 -5 70 -129 81 -140 141 -140 l65 0 0 210 0 210 -63 0 -63 0 12 -135 13 -135 -72 135 c-70 131 -74 135 -150 135 l-77 0 0 -211z"/> <path d="M5480 2870 l0 -210 150 0 c147 0 150 1 150 50 0 46 -7 50 -90 50 -77 0 -90 6 -90 40 0 33 13 40 80 40 113 0 119 74 7 84 -112 9 -111 56 1 56 85 0 92 4 92 50 0 49 -3 50 -150 50 l-150 0 0 -210z"/> <path d="M5840 3030 c0 -42 9 -50 60 -50 l60 0 0 -160 c0 -157 1 -160 50 -160 49 0 50 3 50 160 l0 160 60 0 c51 0 60 8 60 50 0 49 -2 50 -170 50 -168 0 -170 -1 -170 -50z"/> <path d="M2080 2120 l0 -380 99 0 99 0 6 145 6 145 145 6 145 6 0 -151 0 -151 110 0 110 0 0 381 0 381 -105 -6 -105 -6 -6 -146 -6 -146 -144 6 -144 6 -6 145 -6 145 -99 0 -99 0 0 -380z"/> <path d="M3123 2457 c-345 -171 -236 -696 153 -731 335 -31 557 244 443 548 -77 203 -372 294 -596 183z m345 -179 c78 -92 75 -258 -6 -340 -136 -135 -322 -30 -322 182 0 198 210 299 328 158z"/> <path d="M3780 2410 l0 -90 110 0 110 0 0 -290 0 -290 110 0 110 0 0 290 0 290 111 0 111 0 -6 85 -6 85 -325 5 -325 6 0 -91z"/> <path d="M4650 2470 c-218 -116 -170 -333 96 -435 212 -81 151 -188 -78 -136 -128 28 -126 29 -141 -65 -11 -68 -9 -72 66 -92 464 -129 720 291 277 456 -129 49 -160 76 -126 116 25 31 152 34 224 7 52 -20 124 113 84 154 -32 32 -340 28 -402 -5z"/> <path d="M5265 2487 c-19 -8 -25 -103 -25 -379 l0 -368 100 0 100 0 0 117 0 118 118 13 c307 35 413 340 162 467 -85 43 -376 64 -455 32z m351 -171 c67 -67 -8 -176 -120 -176 -54 0 -56 4 -56 100 l0 100 76 0 c42 0 87 -11 100 -24z"/> <path d="M6169 2472 c-196 -85 -284 -345 -187 -547 131 -269 601 -273 738 -6 178 351 -183 713 -551 553z m319 -194 c78 -92 75 -258 -6 -340 -159 -159 -375 28 -304 263 45 150 214 192 310 77z"/> <path d="M6813 2487 c-7 -8 -13 -48 -13 -90 l0 -77 110 0 110 0 0 -290 0 -290 110 0 110 0 0 290 0 290 110 0 110 0 0 90 0 90 -317 0 c-174 0 -322 -6 -330 -13z"/> </g> </svg> 
+                 
+                
+                $(if login-by == 'trial')
+                    <h1>Hi, trial user!</h1>
+                $(elif login-by != 'mac')
+                    <h1>Hi, $(username)!</h1>
+                $(endif)                
+
+                <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+                    <table>
+                        <tr><td>IP address</td><td>$(ip)</td></tr>
+                        <tr><td>Bytes up / down</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+                    $(if session-time-left)
+                        <tr><td>Connected / left</td><td>$(uptime) / $(session-time-left)</td></tr>
+                    $(else)
+                        <tr><td>Connected</td><td>$(uptime)</td></tr>
+                    $(endif)
+                    $(if blocked == 'yes')
+                        <tr><td>Status</td><td>
+                    <a href="$(link-advert)" target="hotspot_advert">Advertisement required</a></td>
+                        </tr>
+                    $(elif refresh-timeout)
+                        <tr><td>Status refresh</td><td>$(refresh-timeout)</td></tr>
+                    $(endif)
+                        </table>
+                    $(if login-by-mac != 'yes')
+                    <!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
+                    <button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
+                    <!-- end of user manager link -->
+                    <input type="submit" value="Log out">
+                    $(endif)
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const bubbleContainer = document.createElement("div");
+    bubbleContainer.classList.add("bubbles");
+    document.body.appendChild(bubbleContainer);
+
+    for (let i = 0; i < 20; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+
+        let size = Math.random() * 50 + 10; // Bubble size between 10px and 60px
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+        bubble.style.left = `${Math.random() * 100}vw`;
+        bubble.style.animationDuration = `${Math.random() * 5 + 1}s`; // Different speeds
+        bubble.style.animationDelay = `${Math.random() * 2}s`; // Staggered animation
+
+        bubbleContainer.appendChild(bubble);
+    }
+});
+
+</script>
+</html>
