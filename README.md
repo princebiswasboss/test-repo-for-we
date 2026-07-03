@@ -221,8 +221,7 @@ This project is licensed under the MIT License.
 
 **Prince Biswas**
 
-* GitHub: https://github.com/yourusername
-* Email: [your@email.com](mailto:your@email.com)
+* GitHub: https://github.com/princebiswasboss
 
 ---
 
